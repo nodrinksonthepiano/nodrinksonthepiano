@@ -1,0 +1,129 @@
+body {
+    background-image: url('/CreationCreator_Logo_Color copy.png');
+    background-size: 144%; /* Increase the size of the logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.chat-container, .content-box {
+    background-image: url('/IMG_723E215270D1-1.jpeg'); /* Use the emerald image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Golden glimmer */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: white; /* Ensure text inside the container is white */
+}
+
+.chat-container input, .content-box input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Subtle golden glimmer */
+    color: #000000; /* Black text for contrast */
+}
+
+.chat-container button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4cc2f1; /* Light blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Light blue glimmer */
+}
+
+.chat-container button:hover {
+    background-color: #39a6d6; /* Darker light blue for hover effect */
+}
+
+#chat {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.message.user {
+    text-align: right;
+}
+
+.message.jai {
+    text-align: left;
+}
+
+.message.system {
+    text-align: center;
+    font-style: italic;
+    color: #fdd835; /* Yellow color for system messages */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content-box {
+    background-image: url('/IMG_723E215270D1-1.jpeg'); /* Use the emerald image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Golden glimmer */
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle golden glimmer with dark outline */
+    color: #fffacd; /* Almost white with a golden hue */
+    animation: glimmer 2s infinite;
+}
+
+@keyframes glimmer {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 1), 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+}
