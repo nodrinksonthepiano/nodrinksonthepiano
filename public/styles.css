@@ -1,6 +1,7 @@
 body {
+    background-color: #0b1e34; /* Dark blue to match the logo background */
     background-image: url('/CreationCreator_Logo_Color copy.png');
-    background-size: 144%; /* Increase the size of the logo */
+    background-size: 144%;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -13,7 +14,7 @@ body {
     color: white;
 }
 
-.chat-container, .content-box {
+.chat-container {
     background-image: url('/IMG_723E215270D1-1.jpeg'); /* Use the emerald image */
     background-size: cover;
     background-position: center;
@@ -21,18 +22,19 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Golden glimmer */
     max-width: 400px;
-    width: 100%;
+    width: 90%; /* Adjust width to fit better on mobile */
     text-align: center;
     color: white; /* Ensure text inside the container is white */
+    margin: 20px; /* Add some margin for better spacing */
 }
 
-.chat-container input, .content-box input {
+.chat-container input {
     width: calc(100% - 20px);
     padding: 10px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    background: rgba(255, 255, 255, 0.8); /* More opaque white */
     box-shadow: 0 0 5px rgba(255, 215, 0, 0.8); /* Subtle golden glimmer */
     color: #000000; /* Black text for contrast */
 }
